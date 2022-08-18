@@ -1,5 +1,13 @@
 body {
-    background-color: silver;
-    text-color: blue
-    align: center 
-  }
+  background-color: silver;
+  color: blue;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
