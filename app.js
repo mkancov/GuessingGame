@@ -24,8 +24,10 @@ case 'yellow':
 default:
   alert('Oh interesting, I don\'t know that color');
 }
+console.log('Next question');
 
-let movie = prompt('What is one of my favorite action movies?'); 
+let movie = prompt('What is one of my favorite action movies?');
+console.log(Movie); 
 if (typeof(movie) === 'string') {
   movie = movie.toLowerCase(); 
 }
