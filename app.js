@@ -96,28 +96,16 @@ if (food === 'burgers') {
   alert('No, I don\'t think i\'ve tried that');
 }
 
-var computerNumber = Math.floor(Math.random()*20)+1;
-var numTurns = 5;
-var hasWon = false;
+alert("You have 4 guesses. Guess 1-10")
 
-while(userNumber != computerNumber && numTurns < 4){
-  numTurns++;
-  var userNumber = prompt("Turn" + numTurns + ":Can you guess my numnber?");
+let answer = 3;
+let guess = prompt("guess a number");
 
-  if (computerNumber == userNumber) {
-    alert("Correct Answer!");
-    hasWon= true;
- }
- else if (computerNumber < userNumber) {
-  alert("Too low :(");
- }
- else {
-  alert("That's not a number");
- }
-}
-
-if (hasWon == true) {
-  alert("Congrats! You Won!")
-} else if (hasWon == false) {
-  alert("Sorry, better luck next time")
+for (i=0; i<4; i++){
+  if (answer == guess){
+    alert("Congrats, You Win!");
+    break;
+  }else{
+    guess= prompt("Wrong answer :(");
+  }
 }
