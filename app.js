@@ -109,3 +109,17 @@ for (i=0; i<4; i++){
     guess= prompt("Wrong answer :(");
   }
 }
+
+alert("You have 6 guesses. Good Luck!");
+
+let answer = {Miami, New York, Oakland};
+let guess = prompt("Guess what cities I have lived in!");
+
+for (i=0; i<5; i++){
+  if (answer == guess){
+    alert("Congrats you win!");
+    break;
+  }else{
+    guess= prompt("Wrong answer")
+  }
+}
