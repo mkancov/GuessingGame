@@ -24,6 +24,7 @@ case 'yellow':
 default:
   alert('Oh interesting, I don\'t know that color');
 }
+
 console.log('Next question');
 
 let movie = prompt('What is one of my favorite action movies?');
@@ -93,4 +94,30 @@ if (food === 'burgers') {
   alert('I love steak!');
 } else {
   alert('No, I don\'t think i\'ve tried that');
+}
+
+var computerNumber = Math.floor(Math.random()*20)+1;
+var numTurns = 5;
+var hasWon = false;
+
+while(userNumber != computerNumber && numTurns < 4){
+  numTurns++;
+  var userNumber = prompt("Turn" + numTurns + ":Can you guess my numnber?");
+
+  if (computerNumber == userNumber) {
+    alert("Correct Answer!");
+    hasWon= true;
+ }
+ else if (computerNumber < userNumber) {
+  alert("Too low :(");
+ }
+ else {
+  alert("That's not a number");
+ }
+}
+
+if (hasWon == true) {
+  alert("Congrats! You Won!")
+} else if (hasWon == false) {
+  alert("Sorry, better luck next time")
 }
