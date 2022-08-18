@@ -98,8 +98,8 @@ if (food === 'burgers') {
 
 alert("You have 4 guesses. Guess 1-10")
 
-let answer = 3;
-let guess = prompt("guess a number");
+ answer = 3;
+ guess = prompt("guess a number");
 
 for (i=0; i<4; i++){
   if (answer == guess){
@@ -112,8 +112,8 @@ for (i=0; i<4; i++){
 
 alert("You have 6 guesses. Good Luck!");
 
-let answer = {Miami, New York, Oakland};
-let guess = prompt("Guess what cities I have lived in!");
+ answer = ["Miami", "New York", "Oakland"];
+ guess = prompt("Guess what cities I have lived in!");   
 
 for (i=0; i<5; i++){
   if (answer == guess){
