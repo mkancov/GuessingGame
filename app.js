@@ -6,7 +6,7 @@ function guessingGame() {
   console.log("app is running");
 
   let user = prompt("What is you name?");
-  console.log(user);
+  alert("Hello" + " " + user + " " + "welcome to the guessing game!");
   if (user === null || user === " ") {
     alert("You need to provide your name");
     user = prompt("No really what is your name?");
@@ -37,17 +37,17 @@ function guessingGame() {
     movie = movie.toLowerCase();
   }
 
-  if (movie === "con air") {
+  if (movie === "Gladiator") {
     alert("That is a great Movie!");
     rightAnswersCount++;
-  } else if (movie === "the rock") {
+  } else if (movie === "Spiderman") {
     alert("Another great Movie");
     rightAnswersCount++;
-  } else if (movie === "face off") {
+  } else if (movie === "Top Gun") {
     alert("One of my faves!");
     rightAnswersCount++;
   } else {
-    alert("No, I don't know that movie!");
+    alert("No, not quite");
   }
 
   let music = prompt("Guess my favorite genre of music!");
@@ -83,7 +83,7 @@ function guessingGame() {
       alert("Not for me!");
       break;
     case "miami":
-      alert("home sweet home");
+      alert("Yes!");
       rightAnswersCount++;
       break;
     default:
@@ -103,9 +103,48 @@ function guessingGame() {
   } else if (food === "steak") {
     alert("I love steak!");
   } else {
-    alert("No, I don't think i've tried that");
+    alert("No, that isn't one of my favorites");
   }
 
+  alert("Yes or No questions")
+  let dog = prompt("Do you have a dog?");
+  if (dog === "yes") {
+    alert("I love dogs!");
+  } else if (dog === "no") {
+    alert("I wish I had a dog");
+  }
+
+  alert("next question");
+  let pet = prompt("Do you have a pet?");
+  if (pet === "yes") {
+    alert("I want a pet!");
+  } else if (pet === "no") {
+    alert("Neither do I:(");
+  }
+
+  alert("next question");
+  let vacation = prompt("Do you like to travel?");
+  if (vacation === "yes") {
+    alert("I love to travel!");
+  } else if (vacation === "no") {
+    alert("I wish I could travel more");
+  }
+
+  alert("Two more yes or no questions");
+  let car = prompt("Do you like cars?");
+  if (car === "yes") {
+    alert("I love cars!");
+  } else if (car === "no") {
+    alert("You're probably a slow driver");
+  }
+
+   alert("last question");
+    let sports = prompt("Do you like sports?");
+    if (sports === "yes") {
+      alert("I love sports!");
+    } else if (sports === "no") {
+      alert("What do  you like?");
+    }
   alert("You have 4 guesses. Guess 1-10");
 
   let answer = 5;
